@@ -60,9 +60,10 @@ img{
 
 .student-header{
     display: flex;
-    background-color: rgba(155, 114, 193, 0.804);
+    background-color: rgba(197, 160, 232, 0.703);
     justify-content: center;
     font-size: 1.2rem;
+    border-bottom: solid;
 }
 
 .registration-no{
@@ -71,3 +72,7 @@ img{
     font-weight: bold;
 }
 
+.regis-number{
+    margin-left: 15px;
+    color: red;
+}
