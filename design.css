@@ -76,3 +76,8 @@ img{
     margin-left: 15px;
     color: red;
 }
+
+
+.gender-age{
+    display: flex;
+}
