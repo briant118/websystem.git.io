@@ -90,7 +90,7 @@ img{
     width: 100%;
 }
 
-.number-name{
+.number-name, .College, .School-year{
     font-weight: bold;
     
 }
@@ -105,4 +105,31 @@ img{
 
 .student-name{
     margin-left: 20px;
+}
+
+.gender-age-container{
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.age{
+    margin-left:50px;
+}
+
+.gender-age li span, .School-year li span, .College li span{
+    margin-left: 10px;
+}
+
+
+.student-container2{
+    width: 33.4%;
+    padding: 10px;
+}
+
+.College li, .School-year li{
+    margin-bottom: 6px;
+}
+
+.School-year {
+    margin-top: 10px;
 }
