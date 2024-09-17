@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     list-style: none;
+    font-family: sans-serif;
 
 
     
@@ -60,7 +61,7 @@ img{
 
 .student-header{
     display: flex;
-    background-color: rgba(197, 160, 232, 0.703);
+    background-color: #D0B6F3;
     justify-content: center;
     font-size: 1.2rem;
     border-bottom: solid;
@@ -74,7 +75,7 @@ img{
 
 .regis-number{
     margin-left: 15px;
-    color: red;
+    color: #941212;
 }
 
 
