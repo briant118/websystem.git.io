@@ -164,7 +164,7 @@ img{
     height: 400px;
     padding: 2px;
     margin-left: 10px;
-    margin-top: 10px;
+   
    
 }
 .sub{
@@ -172,16 +172,16 @@ img{
     height: 400px;
     padding: 2px;
     margin-left: 50px;
-    margin-top: 10px;
+    
 }
 
 .units{
-    width: 0px;
+    width: 100px;
     height: 400px;
     padding: 2px;
-    margin-left: 50px;
-    margin-top: 10px;
-    background-color: rgb(192, 192, 183);
+    margin-left: 20px;
+    
+    
 }
 .code ul li, .sub ul li, .units-number{
     margin-top: 30px;
@@ -193,4 +193,5 @@ img{
 
 .units-contents{
     display: flex;
+    justify-content: space-between;
 }
