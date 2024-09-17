@@ -116,7 +116,7 @@ img{
     margin-left:50px;
 }
 
-.gender-age li span, .School-year li span, .College li span{
+.gender-age li span, .School-year li span{
     margin-left: 10px;
 }
 
@@ -132,4 +132,8 @@ img{
 
 .School-year {
     margin-top: 10px;
+}
+
+.College li span{
+    margin-left: 5px;
 }
