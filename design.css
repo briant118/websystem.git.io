@@ -49,6 +49,7 @@ img{
 .main-container{
     margin: 0.8% 5% 0 5%;
     border: solid black;
+    height: 1500px;
 }
 
 .main-content-student{
@@ -148,11 +149,21 @@ img{
     padding: 8px;
     margin-left:10px ;
     align-items: center;
+    justify-content: space-between;
     font-size: 0.9rem;
     
 }
 
 .code-title{
     background-color:  rgb(203, 204, 245);
+    border-bottom: solid;
 }
 
+.code ul{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8%;
+    padding: 8px;
+    margin: 0 5px 0 5px ;
+}
