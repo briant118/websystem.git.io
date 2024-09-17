@@ -159,11 +159,38 @@ img{
     border-bottom: solid;
 }
 
-.code ul{
+.code{
+    width: 100px;
+    height: 400px;
+    padding: 2px;
+    margin-left: 10px;
+    margin-top: 10px;
+   
+}
+.sub{
+    width: 280px;
+    height: 400px;
+    padding: 2px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.units{
+    width: 0px;
+    height: 400px;
+    padding: 2px;
+    margin-left: 50px;
+    margin-top: 10px;
+    background-color: rgb(192, 192, 183);
+}
+.code ul li, .sub ul li, .units-number{
+    margin-top: 30px;
+}
+
+.code-sub-container{
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 8%;
-    padding: 8px;
-    margin: 0 5px 0 5px ;
+}
+
+.units-contents{
+    display: flex;
 }
