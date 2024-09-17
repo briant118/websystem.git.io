@@ -48,16 +48,16 @@ img{
 
 .main-container{
     margin: 0.8% 5% 0 5%;
-
+    border: solid black;
 }
 
 .main-content-student{
-    border: solid black;
+    border-bottom: solid black;
 }
 
 .student-header{
     display: flex;
-    background-color: #D0B6F3;
+    background-color: rgb(203, 204, 245);
     justify-content: center;
     font-size: 1.2rem;
     border-bottom: solid;
@@ -65,7 +65,7 @@ img{
 }
 
 .registration-no{
-    margin: 0 0 5px 20px;
+    margin: 15px 0 1px 120px;
     font-size: 1.1rem;
     font-weight: bold;
 }
@@ -141,3 +141,14 @@ img{
 .bachelor{
     font-size: 15.4px;
 }
+
+.code-title ul{
+    display: flex;
+    gap: 8%;
+    padding: 8px;
+    align-items: center;
+    background-color:  rgb(203, 204, 245);
+    font-size: 1rem;
+    
+}
+
