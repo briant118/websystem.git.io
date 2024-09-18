@@ -257,6 +257,8 @@ img{
     width: 280px;
     display: flex;
     justify-content: flex-end;
+    align-items: end;
     font-weight: bold;
     font-size: 1.1rem;
+    height: 40px;
 }
