@@ -213,7 +213,8 @@ img{
     
 }
 .code ul li, .sub ul li, .units-number{
-    margin-top: 30px;
+    margin-top: 5px;
+    margin-bottom: 30px;
 }
 
 .code-sub-container{
