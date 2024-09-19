@@ -205,7 +205,7 @@ img{
 
 
 .units{
-    width: 100px;
+    width: 200px;
     height: 400px;
     padding: 2px;
     margin-left: 20px;
@@ -265,4 +265,17 @@ img{
     font-weight: bold;
     font-size: 1.1rem;
     height: 40px;
+}
+
+.section{
+    width: 200px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 1rem;
+
+}
+
+.section ul li{
+    padding-bottom: 30px;
+    padding-left: 20px;
 }
