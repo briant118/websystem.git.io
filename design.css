@@ -58,7 +58,7 @@ img{
 
 .student-header{
     display: flex;
-    background-color: rgb(203, 204, 245);
+    background-color: #d6c8f5;
     justify-content: center;
     font-size: 1.2rem;
     border-bottom: solid;
@@ -156,7 +156,7 @@ img{
 }
 
 .code-title{
-    background-color:  rgb(203, 204, 245);
+    background-color: #d6c8f5;
     border-bottom: solid;
 }
 
