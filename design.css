@@ -49,7 +49,7 @@ img{
 .main-container{
     margin: 0.8% 5% 0 5%;
     border: solid black;
-    height: 1500px;
+    height: fit-content;
 }
 
 .main-content-student{
@@ -223,6 +223,7 @@ img{
     width: 100%;
     margin-top: 8px;
     border-top: solid black;
+    list-style: none;
 }
 
 .units-contents{
@@ -381,6 +382,7 @@ td {
     border: solid;
     font-size: 0.9rem;
     font-weight: bold;
+    
   }
 
 .table3 tr td:first-child {
@@ -389,11 +391,112 @@ td {
 .table3 tr td:last-child {
     border-right: none;
 }
+.table3 tr:last-child td {
+    border-bottom: none;
+}
 .payment{
-    word-spacing: 25px;
+    word-spacing: 22px;
 }
 
+.rules-refund{
+    width: 50%;
+    padding:0 50px;
+}
+    
+
+
+.rules-refund-content h3{
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 5px;
+}
+
+.rules-refund-content li{
+    font-family: 'Mv Boli',serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+}
+
+.receipt{
+    width: 100%;
+    height: 50%;
+    padding:0 10px;
+    margin-top: 15%;
+    font-weight: bold;
+}
+
+.receipt ul{
+    height: 30%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+   
+}
+
+.receipt li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: last baseline;
+    margin-right: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.payment-date, .blank-receipt{
+    width: 100%;
+    text-align: center;
+    border-bottom: solid;
+}
+
+.registrar{
+    display: flex;
+    width: 100%;
+    height: 18%;
+    justify-content: end;
+    font-weight: bold;
+}
   
+
+.registrar-content{
+    width: 50%;
+    padding: 9%;
+}
+.registrar-name{
+    margin-left: 80px;
+    width: 80%;
+    height: 100%;
+    padding: 5% 0;
+    text-align: center;
+  
+}
+.reg-name{
+    border-bottom: solid;
+    padding: 2%;
+}
+.registrar-content p{
+    margin: 2%;
+}
+
+.date-printed{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    font-size: 0.9rem;
+}
+
+footer{
+    text-align: center;
+    background-color: #d6c8f5;
+    border-top: solid;
+    font-weight: bold;
+}
+
+
 
 
 
