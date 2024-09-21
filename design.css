@@ -58,7 +58,7 @@ img{
 
 .student-header{
     display: flex;
-    background-color: #d6c8f5;
+    background-color: rgb(203, 204, 245);
     justify-content: center;
     font-size: 1.2rem;
     border-bottom: solid;
@@ -156,7 +156,7 @@ img{
 }
 
 .code-title{
-    background-color: #d6c8f5;
+    background-color:  rgb(203, 204, 245);
     border-bottom: solid;
 }
 
@@ -330,7 +330,7 @@ img{
     height: 50%;
 }
 .table-fees .table-header{
-    background-color: #d6c8f5;
+    background-color: rgb(203, 204, 245);
     border-bottom: solid black;
     letter-spacing: 8px;
     font-size: 20px;
@@ -366,7 +366,7 @@ td {
     font-weight: bold;
   }
 .table3 th{
-    background-color: #d6c8f5;
+    background-color: rgb(203, 204, 245);
     width: 597px;
     border-top: solid;
     border-bottom: solid;
@@ -491,7 +491,7 @@ td {
 
 footer{
     text-align: center;
-    background-color: #d6c8f5;
+    background-color:rgb(203, 204, 245);
     border-top: solid;
     font-weight: bold;
 }
