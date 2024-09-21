@@ -89,6 +89,7 @@ img{
 .student-information{
     display: flex;
     width: 100%;
+    
 }
 
 .number-name, .College, .School-year{
@@ -279,3 +280,122 @@ img{
     padding-bottom: 30px;
     padding-left: 20px;
 }
+.schedule{
+    width: 17%;
+    font-size: 1rem;
+}
+
+.schedule ul li{
+    padding-bottom: 3px;
+    padding-top: 5px; 
+}
+
+.faculty{
+    width: 19%;
+    font-size: 1rem;
+    padding-left: 5%;
+}
+
+.faculty li{
+    padding-top: 5px; 
+    padding-bottom: 3px ;
+    justify-content: baseline;
+    align-items: first baseline;
+    border-bottom: solid black;
+}
+
+.faculty .s2{
+    padding-top: 28px;
+}
+.note{
+    width: 100%;
+    padding-left: 10px;
+    font-size: 0.7em;
+}
+
+.main-container2{
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    border-collapse: collapse;
+    margin: 0;
+    overflow: hidden;
+}
+.fees{
+    border: solid;
+}
+.table-fees{
+    width: 600px;
+    height: 50%;
+}
+.table-fees .table-header{
+    background-color: #d6c8f5;
+    border-bottom: solid black;
+    letter-spacing: 8px;
+    font-size: 20px;
+}
+
+td {
+    padding: 4px 30px 0 40px ;
+  }
+
+  .table-fees2{
+    border: solid;
+  }
+
+  .table2{
+    width: 100%;
+    
+  }
+
+  .table2, thead{
+    border-top:solid 2px black;
+    border-collapse:collapse ;
+    
+    
+  }
+
+  .table2 th, .table2 td{
+    padding: 8px;
+  }
+  .table2 td{
+    width: 25%;
+    height: 25%;
+    text-align: end;
+    font-weight: bold;
+  }
+.table3 th{
+    background-color: #d6c8f5;
+    width: 597px;
+    border-top: solid;
+    border-bottom: solid;
+    letter-spacing: 5px;
+    font-size: 18px;
+}
+
+.table3{
+    border-collapse: collapse;
+}
+  .table3 td{
+    padding: 10px 10px 10px 30px ;
+    border: solid;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
+.table3 tr td:first-child {
+    border-left: none;
+}
+.table3 tr td:last-child {
+    border-right: none;
+}
+.payment{
+    word-spacing: 25px;
+}
+
+  
+
+
+
+
+  
