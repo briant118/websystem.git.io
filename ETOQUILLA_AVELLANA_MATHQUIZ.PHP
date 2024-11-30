@@ -43,6 +43,20 @@ if (isset($_POST['toggle_settings'])) {
     $_SESSION['show_settings'] = !$_SESSION['show_settings'];
 }
 
+if (isset($_POST['update_settings'])) {
+    $_SESSION['quiz_settings']['operator'] = $_POST['operator']; // Set the selected operator
+    $_SESSION['quiz_settings']['max_item'] = (int)$_POST['max_item']; // Max number of questions
+    $_SESSION['quiz_settings']['level'] = $_POST['level'];
+    $_SESSION['quiz_settings']['answer_range'] = (int)$_POST['answer_range']; // Store the answer range
+
+    if ($_POST['level'] === 'custom') {
+        $_SESSION['quiz_settings']['custom_level_start'] = (int)$_POST['custom_level_start'];
+        $_SESSION['quiz_settings']['custom_level_end'] = (int)$_POST['custom_level_end'];
+    }
+
+    $_SESSION['show_settings'] = false;
+}
+
 ?>
 
 <!DOCTYPE html>
