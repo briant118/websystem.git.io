@@ -91,6 +91,17 @@ if ($_SESSION['quiz_started'] && isset($_POST['answer'])) {
 if ($_SESSION['quiz_started'] && $_SESSION['current_question'] <= $_SESSION['quiz_settings']['max_item']) {
     $range = [1, 10];
 
+    if ($_SESSION['quiz_settings']['level'] === '1-10') {
+        $range = [1, 10];
+    } elseif ($_SESSION['quiz_settings']['level'] === '11-100') {
+        $range = [11, 100];
+    } elseif ($_SESSION['quiz_settings']['level'] === 'custom') {
+        $range = [$_SESSION['quiz_settings']['custom_level_start'], $_SESSION['quiz_settings']['custom_level_end']];
+    }
+
+    $num1 = rand($range[0], $range[1]);
+    $num2 = rand($range[0], $range[1]);
+
 ?>
 
 <!DOCTYPE html>
