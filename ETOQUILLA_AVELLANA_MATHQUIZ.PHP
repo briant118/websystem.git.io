@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+if (!isset($_SESSION['score'])) {
+    $_SESSION['score'] = ['right' => 0, 'wrong' => 0];
+}
+
+
 ?>
 
 <!DOCTYPE html>
