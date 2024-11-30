@@ -140,6 +140,16 @@ if ($_SESSION['quiz_started'] && $_SESSION['current_question'] <= $_SESSION['qui
         }
     }
 
+    shuffle($choices);
+} else {
+    // Set default values for before quiz starts
+    $num1 = 0;
+    $num2 = 0;
+    $operator_symbol = '+';
+    $correct_answer = 0;
+    $choices = [0, 1, 2, 3];
+}
+
 ?>
 
 <!DOCTYPE html>
