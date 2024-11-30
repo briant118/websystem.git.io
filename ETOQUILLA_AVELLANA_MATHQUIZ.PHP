@@ -102,6 +102,32 @@ if ($_SESSION['quiz_started'] && $_SESSION['current_question'] <= $_SESSION['qui
     $num1 = rand($range[0], $range[1]);
     $num2 = rand($range[0], $range[1]);
 
+    $operator_symbol = '';
+    switch ($_SESSION['quiz_settings']['operator']) {
+        case 'add':
+            $operator_symbol = '+';
+            break;
+        case 'subtract':
+            $operator_symbol = '-';
+            break;
+        case 'multiply':
+            $operator_symbol = '×';
+            break;
+    }
+
+    $correct_answer = 0;
+    switch ($_SESSION['quiz_settings']['operator']) {
+        case 'add':
+            $correct_answer = $num1 + $num2;
+            break;
+        case 'subtract':
+            $correct_answer = $num1 - $num2;
+            break;
+        case 'multiply':
+            $correct_answer = $num1 * $num2;
+            break;
+    }
+
 ?>
 
 <!DOCTYPE html>
