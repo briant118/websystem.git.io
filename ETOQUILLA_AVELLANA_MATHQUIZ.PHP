@@ -32,6 +32,13 @@ if (isset($_POST['close_quiz'])) {
     exit();
 }
 
+if (isset($_POST['start_quiz'])) {
+    $_SESSION['quiz_started'] = true;
+    $_SESSION['score'] = ['right' => 0, 'wrong' => 0];
+    $_SESSION['current_question'] = 1; 
+}
+
+
 ?>
 
 <!DOCTYPE html>
