@@ -16,6 +16,16 @@ if (!isset($_SESSION['quiz_settings'])) {
     ];
 }
 
+if (!isset($_SESSION['quiz_started'])) {
+    $_SESSION['quiz_started'] = false;
+}
+if (!isset($_SESSION['show_settings'])) {
+    $_SESSION['show_settings'] = false;
+}
+if (!isset($_SESSION['current_question'])) {
+    $_SESSION['current_question'] = 0; 
+}
+
 ?>
 
 <!DOCTYPE html>
