@@ -4,7 +4,17 @@ session_start();
 if (!isset($_SESSION['score'])) {
     $_SESSION['score'] = ['right' => 0, 'wrong' => 0];
 }
-
+if (!isset($_SESSION['quiz_settings'])) {
+    $_SESSION['quiz_settings'] = [
+        'operator' => 'multiply', // Default operator is multiply
+        'num_items' => 4, // 4 choices for each question
+        'max_item' => 2, // Max number of questions (max_item)
+        'level' => '1-10',
+        'custom_level_start' => 1,
+        'custom_level_end' => 10,
+        'answer_range' => 5 // Default answer range tolerance
+    ];
+}
 
 ?>
 
