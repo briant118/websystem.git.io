@@ -81,6 +81,12 @@ if ($_SESSION['quiz_started'] && isset($_POST['answer'])) {
         $_SESSION['score']['wrong']++;
         $message = "Wrong! Correct answer was $correct_answer.";
     }
+    if ($_SESSION['current_question'] < $_SESSION['quiz_settings']['max_item']) {
+        $_SESSION['current_question']++;
+    } else {
+        $message = "Quiz completed! Final score: Correct: {$_SESSION['score']['right']}, Wrong: {$_SESSION['score']['wrong']}";
+    }
+}
 
 ?>
 
