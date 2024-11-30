@@ -88,6 +88,9 @@ if ($_SESSION['quiz_started'] && isset($_POST['answer'])) {
     }
 }
 
+if ($_SESSION['quiz_started'] && $_SESSION['current_question'] <= $_SESSION['quiz_settings']['max_item']) {
+    $range = [1, 10];
+
 ?>
 
 <!DOCTYPE html>
