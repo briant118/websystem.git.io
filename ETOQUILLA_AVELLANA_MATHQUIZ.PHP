@@ -128,6 +128,10 @@ if ($_SESSION['quiz_started'] && $_SESSION['current_question'] <= $_SESSION['qui
             break;
     }
 
+    $range_offset = isset($_SESSION['quiz_settings']['answer_range']) ? $_SESSION['quiz_settings']['answer_range'] : 5;
+
+    
+
 ?>
 
 <!DOCTYPE html>
