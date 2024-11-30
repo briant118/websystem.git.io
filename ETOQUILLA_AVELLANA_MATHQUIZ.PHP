@@ -26,6 +26,12 @@ if (!isset($_SESSION['current_question'])) {
     $_SESSION['current_question'] = 0; 
 }
 
+if (isset($_POST['close_quiz'])) {
+    session_destroy();
+    header("Location: " . $_SERVER['PHP_SELF']);
+    exit();
+}
+
 ?>
 
 <!DOCTYPE html>
