@@ -131,6 +131,14 @@ if ($_SESSION['quiz_started'] && $_SESSION['current_question'] <= $_SESSION['qui
     $range_offset = isset($_SESSION['quiz_settings']['answer_range']) ? $_SESSION['quiz_settings']['answer_range'] : 5;
 
     $choices = [$correct_answer];
+    while (count($choices) < 4) { // Always 4 choices
+        $choice = rand($correct_answer - $range_offset, $correct_answer + $range_offset);
+        
+        // Ensure the choice is not already in the choices array
+        if (!in_array($choice, $choices)) {
+            $choices[] = $choice;
+        }
+    }
 
 ?>
 
