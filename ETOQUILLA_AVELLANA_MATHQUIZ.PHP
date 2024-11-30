@@ -57,6 +57,31 @@ if (isset($_POST['update_settings'])) {
     $_SESSION['show_settings'] = false;
 }
 
+if ($_SESSION['quiz_started'] && isset($_POST['answer'])) {
+    $num1 = $_POST['num1'];
+    $num2 = $_POST['num2'];
+    $operator = $_SESSION['quiz_settings']['operator'];
+    
+    switch ($operator) {
+        case 'add':
+            $correct_answer = $num1 + $num2;
+            break;
+        case 'subtract':
+            $correct_answer = $num1 - $num2;
+            break;
+        case 'multiply':
+            $correct_answer = $num1 * $num2;
+            break;
+    }
+
+    if ((int)$_POST['answer'] === $correct_answer) {
+        $_SESSION['score']['right']++;
+        $message = "Correct!";
+    } else {
+        $_SESSION['score']['wrong']++;
+        $message = "Wrong! Correct answer was $correct_answer.";
+    }
+
 ?>
 
 <!DOCTYPE html>
