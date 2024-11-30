@@ -39,6 +39,10 @@ if (isset($_POST['start_quiz'])) {
 }
 
 
+if (isset($_POST['toggle_settings'])) {
+    $_SESSION['show_settings'] = !$_SESSION['show_settings'];
+}
+
 ?>
 
 <!DOCTYPE html>
